@@ -1,0 +1,78 @@
+{
+  "name": "intentx-state-z",
+  "version": "0.1.0",
+  "description": "A fine-grained, intent-driven reactive state runtime. Headless, async-first, deterministic.",
+  "license": "MIT",
+  "author": "Delpi.Kye",
+  "sideEffects": false,
+
+  "main": "./build/index.cjs.js",
+  "module": "./build/index.esm.js",
+  "types": "./build/index.d.ts",
+
+  "exports": {
+    ".": {
+      "types": "./build/index.d.ts",
+      "import": "./build/index.esm.js",
+      "require": "./build/index.cjs.js"
+    }
+  },
+
+  "files": [
+    "build"
+  ],
+
+  "scripts": {
+    "clean": "rimraf build",
+    "build": "rollup -c",
+    "cb": "npm run clean && npm run build",
+    "prepublishOnly": "npm run cb"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/delpikye-v/intentx-state.git"
+  },
+
+  "homepage": "https://github.com/delpikye-v/intentx-state",
+
+  "bugs": {
+    "url": "https://github.com/delpikye-v/intentx-state/issues"
+  },
+
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/delpikye-v"
+  },
+
+  "keywords": [
+    "state-management",
+    "reactive",
+    "fine-grained",
+    "signals",
+    "atom",
+    "computed",
+    "async-state",
+    "scheduler",
+    "deterministic",
+    "intent-driven",
+    "headless",
+    "state-runtime"
+  ],
+
+  "dependencies": {
+    "intentx-core-z": "^2.2.1"
+  },
+
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "rimraf": "^5.0.5",
+    "rollup": "^4.9.6",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "tslib": "^2.6.2",
+    "typescript": "^5.3.3"
+  }
+}
