@@ -1,11 +1,12 @@
 {
   "name": "intentx-state-z",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "A fine-grained, intent-driven reactive state runtime. Headless, async-first, deterministic.",
   "license": "MIT",
   "author": "Delpi.Kye",
   "sideEffects": false,
 
+  "type": "module",
   "main": "./build/index.cjs.js",
   "module": "./build/index.esm.js",
   "types": "./build/index.d.ts",
@@ -74,5 +75,9 @@
     "rollup-plugin-typescript2": "^0.36.0",
     "tslib": "^2.6.2",
     "typescript": "^5.3.3"
+  },
+
+  "engines": {
+    "node": ">=16.0.0"
   }
 }
