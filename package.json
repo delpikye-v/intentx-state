@@ -1,6 +1,6 @@
 {
   "name": "intentx-state-z",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A fine-grained, intent-driven reactive state runtime. Headless, async-first, deterministic.",
   "license": "MIT",
   "author": "Delpi.Kye",
